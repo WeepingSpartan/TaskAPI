@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API</title>
+    <link rel="stylesheet"  href="{% static 'styles.css'%}">
+</head>
+<body>
+
+<div class="wrapper">
+    <nav>
+        <ul>
+            {% if user.is_authenticated %}
+            <li>
+                <form class="logout-link" action="{%url 'account:logout'%}" method="post">
+                    {%csrf_token%}
+                    <button type="submit" >Logout</button>
+
+                </form>
+            </li>
+            {% else %}
+            <li>
+                <form class="login-link" action="{%url 'account:login'%}" method="post">
+                    {%csrf_token%}
+                    <button type="submit" >Login</button>
+
+                </form>
+            </li>
+            <li>
+                <form class="signup-link" action="{%url 'account:signup'%}" method="post">
+                    {%csrf_token%}
+                    <button type="submit" >Signup</button>
+
+                </form>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+    {%block content%}
+    
+    {%endblock%}
+</div>
+
+</body>
+</html>

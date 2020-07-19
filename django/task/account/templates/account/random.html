@@ -1,0 +1,12 @@
+{%extends "base_layout.html"%}
+
+
+{%block content%}
+<h1>Random Number </h1>
+<form class="site-form" action="" method="POST">
+    {% load randomno %}
+    {% random_int %}
+    {% load randomno %}
+</form>
+{%endblock%}
+
