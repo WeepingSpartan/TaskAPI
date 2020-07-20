@@ -43,8 +43,9 @@ python3 manage.py runserver 7000
 ### 2. To run fastapi server:
 
 
+### (Necessary)
 ```
-uvicorn main:app --reload
+uvicorn main:app --reload --port 8000 
 ```
 
 ![FastAPI is run on the http://localhost:8000](pic/2.png)
