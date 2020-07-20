@@ -31,7 +31,7 @@ Follow the below steps:
 ### 1. To run django server on localhost, go to task folder using :
 
 ```
-cd task/
+cd django/task/
 python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py runserver 7000
@@ -45,6 +45,7 @@ python3 manage.py runserver 7000
 
 ### (Necessary)
 ```
+cd fastapi/
 uvicorn main:app --reload --port 8000 
 ```
 
