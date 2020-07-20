@@ -40,9 +40,8 @@ python3 manage.py runserver 7000
 ![Django API is run on the http://localhost:7000](pic/1.png)
 
 
-### 2. To run fastapi server 
+### 2. To run fastapi server:
 
-1. Remove the service account.
 
 ```
 uvicorn main:app --reload
