@@ -1,4 +1,4 @@
-# TASK : To build a random generator API and add a rate limiting service on top of it
+# Building a random generator API and add a rate limiting service on top of it
 
 
 
